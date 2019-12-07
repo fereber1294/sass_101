@@ -1,0 +1,46 @@
+@import 'vars';
+@import 'mixin';
+@import 'class';
+
+.lista {
+    & img {
+        &:nth-child(1) {
+            @include evaluarLista(1)
+        }
+        &:nth-child(2) {
+            @include evaluarLista(2)
+        }
+        &:nth-child(3) {
+            @include evaluarLista(3)
+        }
+
+    }
+    @include recorreLista($medidas)
+
+}
+
+
+
+header {
+    background-color: $colorHeader ;
+}
+
+footer {
+    background-color: $colorFooter;
+}
+
+#content {
+    width: 300px / 2px * 75%;
+    @extend %flx_ctr_ctr;
+    @include classButton($borderMixin,$letraMixin);
+    background-image: url(https://soundtrackfest.com/wp-content/uploads/2019/07/MN-2019-07-27-Concierto-%e2%80%98BBC-PROMS-The-Sound-Of-Space-Sci-Fi-Film-Music%e2%80%99-en-el-Royal-Albert-Hall.jpg);
+    & img {
+        &:nth-child(1) {
+            visibility: hidden;
+        }
+    }
+}
+
+.button {
+    @include classButton(2.3px solid pink,34px);
+}

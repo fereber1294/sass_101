@@ -1,0 +1,54 @@
+#content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.lista img:nth-child(1) {
+  width: 20px;
+}
+.lista img:nth-child(2) {
+  width: 45px;
+}
+.lista img:nth-child(3) {
+  width: 100px;
+}
+.lista #item-200 {
+  width: 200px;
+}
+.lista #item-350 {
+  width: 350px;
+}
+.lista #item-700 {
+  width: 700px;
+}
+
+header {
+  background-color: black;
+}
+
+footer {
+  background-color: red;
+}
+
+#content {
+  width: 11250%;
+  font-size: 14px;
+  color: blue;
+  border: 3px solid red;
+  border-color: green;
+  background-image: url(https://soundtrackfest.com/wp-content/uploads/2019/07/MN-2019-07-27-Concierto-%e2%80%98BBC-PROMS-The-Sound-Of-Space-Sci-Fi-Film-Music%e2%80%99-en-el-Royal-Albert-Hall.jpg);
+}
+#content img:nth-child(1) {
+  visibility: hidden;
+}
+
+.button {
+  font-size: 34px;
+  color: blue;
+  border: 2.3px solid pink;
+  border-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

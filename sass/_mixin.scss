@@ -1,0 +1,26 @@
+@mixin classButton($color, $letra) {
+    font-size: $letra;
+    color: blue;
+    border: $color;
+    border-color: $colorButton; 
+}
+
+@mixin evaluarLista($elemento) {
+    @if $elemento == 1 {
+        width: 20px;
+    }
+    @else if $elemento == 2 {
+        width: 45px;
+    }
+    @else {
+        width: 100px;
+    }
+}
+
+@mixin recorreLista ($lista) {
+    @each $elemento in $lista {
+        #item-#{$elemento} {
+            width: #{$elemento}px;
+        }
+    }   
+}
